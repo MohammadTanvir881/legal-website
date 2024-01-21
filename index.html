@@ -16,6 +16,24 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+        <!--font awesome-->
+        <script src="https://kit.fontawesome.com/f58157aecf.js" crossorigin="anonymous"></script>
+
+        <!--tailwind customize colour-->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    'color': '#B68C5A',
+                    'button-bg': '#B68C5A',
+                  }
+                }
+              }
+            }
+          </script>
+
     <!--tailwind and daisy ui-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -30,7 +48,51 @@
     </style>
 </head>
 
-<body>
+<body class="font-poppins">
+      <header class="container mx-auto">
+           <!--nav section-->
+           <nav class="pt-5 md:pt-10 lg:pt-10 px-5 md:px-10 lg:px-0 mb-14 flex flex-col md:flex-row lg:flex-row">
+            <div class="navbar bg-base-100 flex flex-col md:flex-row lg:flex-row items-start gap-4">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>Service</a></li>
+                      <li><a>Case</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <img class=" " src="./images/logo2.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>HOME</a></li>
+                    <li><a>Service &nbsp;<i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a>Case &nbsp;<i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a>Blog &nbsp;<i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a>Contact Us &nbsp;<i class="fa-solid fa-arrow-right"></i></a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-[#B68C5A] text-white text-base font-semibold">Free Consultation</a>
+                </div>
+              </div>
+           </nav>
+           <!--banner section-->
+           <div class="min-h-52 bg-no-repeat bg-cover text-center px-5 py-10 md:px-20 lg:px-28 mx-4 md:py-28 lg:py-28  " style="background-image: linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0.00) 100%), url('./images/banner.png');">
+
+                 <h1 class=" text-5xl md:text-6xl lg:text-7xl font-extrabold text-white font-garamond mb-6">We Provide Effective <br> Legal Solutions</h1>
+                 <p class="text-[#E7E7E7] mb-8 max-w-2xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                 <input type="text" placeholder="Type here" class="input mr-3 input-bordered w-full max-w-sm" />
+                 <button class="btn border-none md:mt-3 my-3 md:my-0 lg:my-0 text-white font-semibold px-8 py-4 bg-[#B68C5A]"> Search</button>
+               
+           </div>
+      </header>
+      
 
 </body>
 
